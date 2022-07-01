@@ -21,6 +21,7 @@ def subtitles(path_str):
                 shutil.copy2(sub_file, path)
                 #Allows os.rename to find the newly copied file
                 old_sub_name = sub_file.name
+                break
 
     os.rename(old_sub_name, path.name + ".srt")
 
