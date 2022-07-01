@@ -26,5 +26,6 @@ def subtitles(path_str):
     os.rename(old_sub_name, path.name + ".srt")
 
 if __name__ == "__main__":
-    path_str = input("Enter path:\n")
-    subtitles(path_str)
+    while True:
+        path_str = input("Enter path:\n")
+        subtitles(path_str)
